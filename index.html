@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .white{
+      background-color: #F0F1EC;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+    .blue{
+      background-color: #004592;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .container > div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .two{
+      grid-column: span 3;
+    }
+
+    .three{
+      grid-row: span 2;
+    }
+
+    .four{
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .five{
+      border-bottom-style: solid;
+      border-bottom-width: 10px;
+    }
+
+    .six{
+      grid-row: span 2;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red one">1</div>
+    <div class="white two">2</div>
+    <div class="white three">3</div>
+    <div class="white four">4</div>
+    <div class="blue five">5</div>
+    <div class="white six">6</div>
+    <div class="white seven">7</div>
+    <div class="yellow eight">8</div>
+    <div class="black nine">9</div>
+
+
+<!--     <div class="yellow fourteen">14</div>
+    <div class="black fifteen">15</div>
+    <div class="white sixteen">16</div> -->
+  </div>
+</body>
+
+</html>
